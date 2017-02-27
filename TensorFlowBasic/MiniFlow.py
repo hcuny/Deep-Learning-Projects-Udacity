@@ -1,5 +1,7 @@
 import numpy as np
 
+#---------------------------------------- Basic Structure(class): Node ---------------------------------------------
+
 class Node:
     """
     Base class for nodes in the network.
@@ -32,7 +34,7 @@ class Node:
     def forward(self):
         """
         Every node that uses this class as a base class will
-        need to define its own `forward` method.
+        need to define its own `forward` method.           i.e. overWrite
         """
         raise NotImplementedError
 
@@ -43,7 +45,7 @@ class Node:
         """
         raise NotImplementedError
 
-
+#  ---------------------------------- This is a subclass ----------------------------------------
 class Input(Node):
     """
     A generic input into the network.
